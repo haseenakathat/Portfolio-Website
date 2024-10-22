@@ -31,77 +31,86 @@
             <div class="content">
                 <p class="intro">Hi! I Am <span>Haseena Kathat</span></p>
                 <h1>Web Developer.</h1>
-                <p class="detail">Welcome to my portfolio! I specialize in creating engaging and functional web applications using JavaScript, HTML, and CSS. With a passion for problem-solving and a knack for learning new technologies, I turn ideas into reality through innovative web solutions. Explore my projects to see how I combine creativity and technical skills to deliver impactful results.</p>
+                <p class="detail">Welcome to my portfolio! I specialize in creating engaging and functional web applications using JavaScript, HTML, and CSS. Explore my projects to see how I combine creativity and technical skills to deliver impactful results.</p>
                 <div class="btn-container">
-                    <button><a href="mailto:haseenakathat96@gmail.com">Hire Me</a></button>
-                    <button><a href="https://haseenakathat.github.io/calculator/">View Project</a></button>
+                 
+                    <button id="hireMeBtn">Hire Me</button>
+                    
+                    <button><a href="#projects">View Projects</a></button>
                 </div>
             </div>
         </div>
         <div class="right-container"></div>
-    
         <div class="design">
             <div class="circle"></div>
             <div class="circle"></div>
         </div>
     </div>
-<!-- About section added here -->
-<section id="about">
-    <div class="container">
-        <h1>About Me</h1>
-        <p>
-            ● Hi! I’m Haseena Kathat, a web developer with strong skills in front-end technologies. I have a Bachelor of Arts from S.D. Govt. College, Beawar, and I completed a web development course at NavGurukul Foundation of Social Welfare, Udaipur.</p><br>
-        <br>
-        <p>
-            ● My journey in web development started with a passion for creating user-friendly and effective websites. I have experience with HTML, CSS, JavaScript, and various libraries. I am always working to improve my skills to provide high-quality solutions.
-        </p><br>
-        <br>
-        <p>
-            ● In my free time, I like exploring new technologies, contributing to open-source projects, and working on personal coding projects. I am excited about collaborating on new and innovative projects and using my skills to create impactful web solutions.
-        </p>
-    </div>
-</section>
 
-<!-- Projects section -->
-<section id="projects">
-    <div class="container">
-        <h1>My Projects</h1>
-        <p>
-            ● Here are some of my notable projects:
-        </p>
-        <ul>
-            <li><a href="https://haseenakathat.github.io/calculator/" target="_blank">Calculator Project</a></li>
-          
-        </ul>
-        <ul>
-            <li><a href="https://haseenakathat.github.io/Weather-App/" target="_blank">Weather App Project</a></li>
-            
-        </ul>
-        <ul>
-            <li><a href="https://haseenakathat.github.io/Map/" target="_blank">Map Project</a></li>   
-        </ul>
-        <ul></ul>
-            <li><a href="https://haseenakathat.github.io/Clock/" target="_blank">Clock Project</a></li>   
-        </ul>
-    </div>
-</section>
+  
+    <section id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>
+                ● Hello! I'm Haseena Kathat, a passionate web developer with a strong background in front-end technologies. I graduated with a Bachelor of Arts from S.D. Govt. College, Beawar, and have completed a web development course at NavGurukul Foundation of Social Welfare, Udaipur.
+            </p>
+            <br>
+            <p>
+                ● My journey in web development began with an eagerness to create impactful and user-friendly websites. I have experience in HTML, CSS, JavaScript, and various and libraries. I am committed to continuous learning and improving my skills to deliver high-quality solutions.
+            </p>
+            <br>
+            <p>
+                ● In my free time, I enjoy exploring new technologies, contributing to open-source projects, and working on personal coding projects. I am always excited about collaborating on new and innovative projects.
+            </p>
+        </div>
+    </section>
 
-<!-- Resume section -->
-<section id="resume">
-    <div class="container">
-        <h1>My Resume</h1>
-        <p>Download my resume: <a href="Haseena kathat resume (1).pdf" target="_blank">Resume PDF</a></p>
-    </div>
-</section>
-<section id="contact">
-    <div class="contact-container">
-        <div class="contact-info">
-            <h1>Contact Me</h1>
-            <p>Email: haseenakathat96@gmail.com</p>
-            <p>Phone: (+91)9352544345</p>
-            <p>Address: Beawar(Raj)- 305901</p>
+    <section id="projects">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>● Here are some of my notable projects:</p>
+            <ul>
+                <li><a href="https://haseenakathat.github.io/calculator/" target="_blank">Calculator Project</a></li>
+                <li><a href="https://haseenakathat.github.io/Weather-App/" target="_blank">Weather App Project</a></li>
+                <li><a href="https://haseenakathat.github.io/Map/" target="_blank">Map Project</a></li>
+                <li><a href="https://haseenakathat.github.io/Clock/" target="_blank">Clock Project</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <h1>My Resume</h1>
+            <p>Download my resume: <a href="https://drive.google.com/file/d/10x68h4fpTQbPZsD4gqbFXHtLWNa1gE6d/view?usp=sharing" target="_blank">Resume PDF</a></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Contact Me</h1>
+                <p>Email: haseenakathat96@gmail.com</p>
+                <p>Phone: (+91) 9352544345</p>
+                <p>Address: Beawar (Raj) - 305901</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="hireMeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="hireMeForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
-</section>
+
+    <script src="script.js"></script>
 </body>
 </html>
